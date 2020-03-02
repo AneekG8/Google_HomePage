@@ -1,0 +1,138 @@
+body{
+margin: 0;
+padding: 0;
+font-size: 13px;
+font-family: arial;
+}
+#header{
+max-width: 100%;
+margin: 0;
+padding: 10px;
+display: flex;
+justify-content: flex-end;
+}
+
+#header li{
+list-style: none;
+//width: 20px;
+height: 20px;
+//float: right;
+margin: 10px;
+text-align: center;
+}
+#header li img{
+margin: 0;
+width: 20px;
+height: 20px;
+}
+#header li:hover{
+text-decoration: underline;
+color: rgba(0,0,0,0.7);
+}
+#content{
+text-align: center;
+margin-top: 7.5%;
+}
+#content img{
+width: 270px;
+height: 90px;
+}
+#searchbar{
+margin-top: 2%;
+position: relative;
+}
+#searchbar input{
+padding: 0 35px;
+font-size: 15px;
+width: 540px;
+height: 40px;
+border: silver 1px solid;
+border-radius: 25px;
+}
+#searchbar img{
+width: 15px;
+height: 20px;
+position: relative;
+right: 3%;
+top: 5px;
+}
+#searchbar img:nth-child(1){
+left: 3%;
+opacity: 0.7
+}
+#searchbar input:hover{
+//box-shadow: 0 0 5px silver;
+}
+#button{
+margin-top: 2%;
+}
+#button button{
+background-color: #f1f1f1;
+color: rgba(0,0,0,0.6);
+font-size: 15px;
+margin:0 0.4%;
+padding: 10px;
+border: 1px solid #f1f1f1;
+border-radius: 5px;
+}
+#button button:hover{
+border: 1px solid #c9c9c9;
+color: black;
+background-color: #f7f7f7;
+}
+#more{
+margin-top: 2%;
+}
+#more a{
+padding: 3px;
+text-decoration: none;
+}
+#more a:hover{
+text-decoration: underline;
+}
+#footer{
+margin: 0;
+background-color: #f7f7f7;
+width: 100%;
+height: 82px;
+position: absolute;
+bottom: 0;
+}
+#footer div{
+border-top: 1px solid #c9c9c9;
+height: 20px;
+margin:0;
+padding: 10px;
+padding-left: 2%;
+color: #a8a8a8;
+font-size: 15px;
+line-height: 20px;
+}
+#footer div ul{
+padding: 0; 
+margin: 0;
+}
+#footer div ul:nth-child(2){
+width:60%;
+}
+#footer div ul:nth-child(1){
+float: right;
+}
+#footer div ul li{
+display: inline;
+margin-right: 20px;
+list-style: none;
+}
+#footer div ul li a{
+text-decoration: none;
+color: rgba(0,0,0,0.7);
+font-size: 13px;
+}
+#footer div ul li a:hover{
+text-decoration: underline;
+}
+@media(max-height: 500px){
+#footer{
+position: sticky;
+bottom: 0;
+}
